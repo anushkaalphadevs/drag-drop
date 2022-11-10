@@ -30,7 +30,12 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.js",
+              "./node_modules/jquery-ui/dist/jquery-ui.js"
+
+             
+            ]
           },
           "configurations": {
             "production": {
@@ -98,10 +103,19 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.js",
+              "./node_modules/jquery-ui/dist/jquery-ui.js"
+
+             
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "651036c5-1f10-41d2-97be-db93afee8591"
   }
 }
+

@@ -1,14 +1,10 @@
 <section class="a4-bg">
     <div id="containment-wrapper">
-        <div id="draggable3" class="draggable ui-widget-content">
-            <img src="/assets/3.png" alt="" srcset="" [ngStyle]="{'width' : width}">
-          <!-- <p>I&apos;m contained within the box</p> -->
-        </div>
-        <div id="draggable4" class="draggable ui-widget-content">
-            <img src="/assets/4.png" alt="" srcset="" [ngStyle]="{'width' : width}">
-
-        </div>
-    
+            <p  id="l"  class="draggable ui-widget-content">
+                <span class="remove" style="color: #000;">Remove Option</span>
+            </p>
+        <button type="submit" id="b" (click)="dragItems()">add images</button>
+      
       </div>
     
 </section>

@@ -1,9 +1,19 @@
-.a4-bg{
+.draggable {
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+}
 
-    position:absolute; 
-    top:50%; 
-    left:50%; 
-    transform:translate(-50%, -50%); 
+.a4-bg{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // position:absolute; 
+    // top:50%; 
+    // left:50%; 
+    // transform:translate(-50%, -50%);
 
 
     #containment-wrapper {
@@ -15,9 +25,26 @@
         background-size: auto;
     
         .draggable {
+            background-color: unset;
             float: right;
+            height: auto;
             // border: 2px solid #ccc;
             
+        }
+        #draggable5 {
+            cursor: pointer;
+            h1{
+                font-style: italic;
+                font-size: 40px;
+            }
+        }
+        
+        #draggable5 {
+            cursor: pointer;
+            h1{
+                font-style: italic;
+                font-size: 40px;
+            }
         }
     
     }

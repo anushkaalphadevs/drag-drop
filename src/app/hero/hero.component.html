@@ -1,10 +1,20 @@
-<section class="a4-bg">
+<!-- <section class="a4-bg">
     <div id="containment-wrapper">
             <p  id="l"  class="draggable ui-widget-content">
                 <span class="remove" style="color: #000;">Remove Option</span>
             </p>
-        <button type="submit" id="b" (click)="dragItems()">add images</button>
+        <button type="submit" id="b">add images</button>
       
       </div>
     
-</section>
+</section> -->
+<div style="height: 200px; width:200px; background-color: yellow" class="container">
+    <button type="submit" (click)="getItems()">add items</button>
+    <div id="{{i}}" class="test-class" *ngFor="let item of picture;  let i = index"
+      style="height: 20px; width: 20px; background-color: red; z-index: 10" 
+      cdkDrag 
+      cdkDragBoundary=".container"
+      (cdkDragEnded)="onDragEnded($event)">
+      {{item.color}}
+    </div>
+  </div>

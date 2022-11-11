@@ -8,13 +8,12 @@
       </div>
     
 </section> -->
-<div style="height: 200px; width:200px; background-color: yellow" class="container">
+<div  class="container">
     <button type="submit" (click)="getItems()">add items</button>
-    <div id="{{i}}" class="test-class" *ngFor="let item of picture;  let i = index"
-      style="height: 20px; width: 20px; background-color: red; z-index: 10" 
+    <div id="{{i}}" class="grid" *ngFor="let item of picture;  let i = index"
       cdkDrag 
       cdkDragBoundary=".container"
-      (cdkDragEnded)="onDragEnded($event)">
+      (cdkDragEnded)="onDragEnded($event)" [ngStyle]="{'background-color': item.value }">
       {{item.color}}
     </div>
   </div>
